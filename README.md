@@ -20,7 +20,7 @@ Topics include:
 
 ### Student Workstations
 
-IP Addresses for each student can be found in [this gist](http://bit.ly/gilt2014workstations).
+IP Addresses for each student can be found in [this gist](https://gist.github.com/ricardolupo/7f57acdacc9b859f19cb).
 
 ### Materials
 
