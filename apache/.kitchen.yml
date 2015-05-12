@@ -8,9 +8,10 @@ provisioner:
 platforms:
   - name: centos-6.5
     driver_config:
-      network: 
-      - ["forwarded_port", {guest: 80, host: 80}]
-
+      network:
+        forward:
+        - 22:2222
+        - 80:8080
 suites:
   - name: default
     run_list:
