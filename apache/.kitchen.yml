@@ -10,7 +10,6 @@ platforms:
     driver_config:
       network:
         forward:
-        - 22:2222
         - 80:8080
 suites:
   - name: default
