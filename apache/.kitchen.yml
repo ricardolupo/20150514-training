@@ -7,10 +7,11 @@ provisioner:
 
 platforms:
   - name: centos-6.5
-    driver_config:
-      network:
-        forward:
-        - 80:8080
+    
+driver_config:
+  forward:
+  - 80:80
+
 suites:
   - name: default
     run_list:
