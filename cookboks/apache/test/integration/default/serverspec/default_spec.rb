@@ -5,7 +5,7 @@ describe 'apache' do
   it "is awesome" do
     expect(true).to eq true
   end
-  
+
   it "is installed" do
     expect(package "httpd").to be_installed
   end
@@ -27,11 +27,3 @@ describe 'apache' do
     expect(port(81)).not_to be_listening.with("tcp")
   end
 end
-
-
-
-
-
-
-
-

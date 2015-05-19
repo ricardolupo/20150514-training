@@ -3,8 +3,7 @@ package 'git' do
 end
 
 file '/home/chef/.gitconfig' do
-  content "[user]\n  name=Nathen Harvey\n  email=nharvey@chef.io\n"
+  content "[user]\n  name=Ricardo Lupo\n  email=rlupo@chef.io\n"
   user 'chef'
   group 'chef'
 end
-
