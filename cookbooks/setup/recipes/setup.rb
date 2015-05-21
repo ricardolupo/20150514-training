@@ -3,3 +3,7 @@
     action :install
   end
 end
+
+file "/etc/motd" do
+  content "Hello! This file is property of Chef Software, Inc.\n"
+end
