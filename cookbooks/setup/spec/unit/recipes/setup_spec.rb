@@ -37,6 +37,10 @@ describe 'setup::setup' do
     end
   end
 
+  it 'creates a file called /etc/motd' do
+    expect(chef_run).to create_file('/etc/motd')
+  end
+
 end
 
 
