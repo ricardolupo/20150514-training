@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'vim' do
+describe 'vim package' do
   it "is awesome" do
     expect(true).to eq true
   end
