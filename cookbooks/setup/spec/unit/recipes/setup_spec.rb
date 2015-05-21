@@ -7,8 +7,8 @@
 require 'spec_helper'
 
 describe 'setup::setup' do
-  let(:chef_run) { ChefSpec::ServerRunner.new.converge(described_recipe) }
 
+  let(:chef_run) { ChefSpec::ServerRunner.new.converge(described_recipe) }
   it 'installs a package nano' do
     expect(chef_run).to install_package('nano')
   end
@@ -29,9 +29,9 @@ describe 'setup::setup' do
     expect(chef_run).to install_package('vim')
   end
 
-  # same as above, but using a Ruby iterator to unit test
+  # same as above, but using a Ruby iterator to do unit test
 
-  ["emacs", "nano", "vim", "tree", "git"].each do |pkg|
+  %w(emacs nano vim tree git).each do |pkg|
     it "installs a package #{pkg}" do
       expect(chef_run).to install_package(pkg)
     end
@@ -42,21 +42,3 @@ describe 'setup::setup' do
   end
 
 end
-
-
-
-=begin
-context 'When all attributes are default, on an unspecified platform' do
-
-    let(:chef_run) do
-      runner = ChefSpec::ServerRunner.new
-      runner.converge(described_recipe)
-    end
-
-    it 'converges successfully' do
-      chef_run # This should not raise an error
-    end
-
-  end
-end
-=end
