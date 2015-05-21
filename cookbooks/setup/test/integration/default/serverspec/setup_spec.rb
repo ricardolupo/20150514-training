@@ -39,3 +39,20 @@ describe 'tree' do
     expect(package 'tree').to be_installed
   end
 end
+
+describe "/etc/motd" do
+  it 'has the correct content' do
+    expect(file "/etc/motd").to contain /Chef Software/
+  end
+end
+
+=begin
+describe '/etc/motd' do
+  it 'is there' do
+    expect(file "/etc/motd").to be_file
+  end
+
+  it 'contains the correct content' do
+    expect(file "/etc/motd").to contain "/^Hello! This file is property of Chef Software/"
+  end
+=end
