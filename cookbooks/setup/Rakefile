@@ -1,5 +1,5 @@
 task :localtest do
-  sh "rspec ./spec/unit/recipes --color"
+  sh "rspec --color -f d"
   sh "foodcritic -t ~FC003 -t FC0034 ."
   sh "rubocop ./recipes/"
 end

@@ -8,7 +8,12 @@ require 'spec_helper'
 
 describe 'setup::setup' do
 
-  let(:chef_run) { ChefSpec::ServerRunner.new.converge(described_recipe) }
+  context 'When all attributes are default, on an unspecified platform' do
+      let(:chef_run) do
+        runner = ChefSpec::ServerRunner.new
+        runner.converge(described_recipe)
+      end
+
   it 'installs a package nano' do
     expect(chef_run).to install_package('nano')
   end
@@ -41,4 +46,9 @@ describe 'setup::setup' do
     expect(chef_run).to create_file('/etc/motd')
   end
 
+  it 'converges successfully' do
+    chef_run #no error should be raised
+  end
+
+end
 end
