@@ -1,3 +1,5 @@
 source "https://supermarket.chef.io"
+cookbook 'audit-cis'
+cookbook 'audit-demo', git: 'https://github.com/chef-customers/audit-demo'
 
 metadata

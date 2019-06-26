@@ -1,0 +1,31 @@
+{
+  "name": "setup",
+  "description": "Installs/Configures setup",
+  "long_description": "Installs/Configures setup",
+  "maintainer": "The Authors",
+  "maintainer_email": "you@example.com",
+  "license": "all_rights",
+  "platforms": {
+  },
+  "dependencies": {
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.2.0",
+  "source_url": "",
+  "issues_url": ""
+}

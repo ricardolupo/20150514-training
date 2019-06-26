@@ -1,0 +1,10 @@
+{
+  "name": "watch admins",
+  "org_name": "opscode",
+  "modified_by": "opscode",
+  "rule": "rules 'modified administrators group'\n  rule on run_resource\n  when\n    resource_type = 'group'\n    and resource_result = 'modify'\n    and resource_name = 'Administrators'\n    and converge.status = 'success'\n  then\n    alert:warn('I had to modify the Administrators group on {{message.run.node_name}}!')\n    notify('hipchat-red','I had to modify the Administrators group on {{message.run.node_name}}!')\n  end\nend",
+  "with": {
+    "priority": 0
+  },
+  "active": true
+}

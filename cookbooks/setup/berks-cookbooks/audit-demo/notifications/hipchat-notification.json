@@ -1,0 +1,14 @@
+{
+  "org_name": "opscode",
+  "name": "hipchat",
+  "modified_by": "opscode",
+  "notification_type": "hipchat",
+  "delivery_options": {
+    "room": "1568935",
+    "api_token": "tBIM3QQNpslAFTxFFiIpEUF6NHX8K9UQtjpX5U2e",
+    "from": "Chef Analytics",
+    "api_version": "2",
+    "color": "green",
+    "notify": "1"
+  }
+}

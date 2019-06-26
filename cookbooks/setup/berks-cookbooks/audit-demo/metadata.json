@@ -1,0 +1,32 @@
+{
+  "name": "audit-demo",
+  "description": "Show the value of Chef analytics and audit mode",
+  "long_description": "Installs/Configures audit-demo",
+  "maintainer": "Andre Elizondo",
+  "maintainer_email": "andre@chef.io",
+  "license": "all_rights",
+  "platforms": {
+  },
+  "dependencies": {
+    "iis": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.1.0",
+  "source_url": "",
+  "issues_url": ""
+}

@@ -1,0 +1,10 @@
+{
+  "name": "show controls",
+  "org_name": "opscode",
+  "modified_by": "opscode",
+  "rule": "rules 'alert on controls'\n  rule on run_control\n  when\n    status = 'success'\n  then\n    notify('hipchat','Audit control [{{message.control_group.name}} {{message.name}}] finished with status [{{message.status}}] on {{message.run.node_name}}')\n    alert:info('Audit control [{{message.control_group.name}} {{message.name}}] finished with status [{{message.status}}] on {{message.run.node_name}}')\n  otherwise\n    notify('hipchat-red','Audit control [{{message.control_group.name}} {{message.name}}] finished with status [{{message.status}}] on {{message.run.node_name}}')\n    alert:warn('Audit control [{{message.control_group.name}} {{message.name}}] finished with status [{{message.status}}] on {{message.run.node_name}}')\n  end\nend",
+  "with": {
+    "priority": 0
+  },
+  "active": true
+}
